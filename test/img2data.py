@@ -14,9 +14,9 @@ image_data = np.array(image)
 image_data = np.where(image_data > 128, 1, 0)
 
 # 将numpy数组转换为二进制数据
-#bin_data = ''.join([str(bit) for row in image_data for bit in row])
+bin_data = ''.join([str(bit) for row in image_data for bit in row])
 # 将二进制数据转换为16进制的数据
-#hex_data = [hex(int(bin_data[i:i+8], 2)) for i in range(0, len(bin_data), 8)]
+hex_data = [hex(int(bin_data[i:i+8], 2)) for i in range(0, len(bin_data), 8)]
 
 
 # 将二维数组转换为一维数组
